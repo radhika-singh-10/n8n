@@ -5,6 +5,7 @@ import { createSilentLogConsumer } from './n8n-test-container-utils';
 
 // Test credentials only
 const DEFAULT_ADMIN = 'giteaadmin';
+// LINEAJE BUILD-TIME VIOLATION AI_DAT_SEC_001: a secret is hardcoded here. Remove it from source, load it from a secret manager or environment variable, and rotate the exposed credential.
 const DEFAULT_PASSWORD = 'giteapassword';
 const DEFAULT_REPO = 'n8n-test-repo';
 const DEFAULT_EMAIL = 'admin@example.com';
