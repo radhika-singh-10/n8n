@@ -7,6 +7,7 @@ import { JwtService } from '@/services/jwt.service';
 
 describe('JwtService', () => {
 	const iat = 1699984313;
+	// LINEAJE BUILD-TIME VIOLATION AI_DAT_SEC_001: a secret is hardcoded here. Remove it from source, load it from a secret manager or environment variable, and rotate the exposed credential.
 	const jwtSecret = 'random-string';
 	const payload = { sub: 1 };
 	const signedToken =

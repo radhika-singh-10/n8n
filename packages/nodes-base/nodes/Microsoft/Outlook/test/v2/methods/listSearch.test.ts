@@ -95,6 +95,7 @@ describe('MicrosoftOutlookV2 - listSearch methods', () => {
 
 			mockTransport.microsoftApiRequest.mockResolvedValue(mockResponse);
 
+			// LINEAJE BUILD-TIME VIOLATION AI_DAT_SEC_001: a secret is hardcoded here. Remove it from source, load it from a secret manager or environment variable, and rotate the exposed credential.
 			const paginationToken = 'https://graph.microsoft.com/v1.0/me/contacts?$skip=100';
 			await searchContacts.call(mockLoadOptionsFunctions, undefined, paginationToken);
 

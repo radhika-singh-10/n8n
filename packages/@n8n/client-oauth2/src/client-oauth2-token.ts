@@ -50,6 +50,7 @@ export class ClientOAuth2Token {
 			requestObject.headers.Authorization = 'Bearer ' + this.accessToken;
 		} else {
 			const parts = requestObject.url.split('#');
+			// LINEAJE BUILD-TIME VIOLATION AI_DAT_SEC_001: a secret is hardcoded here. Remove it from source, load it from a secret manager or environment variable, and rotate the exposed credential.
 			const token = 'access_token=' + this.accessToken;
 			const url = parts[0].replace(/[?&]access_token=[^&#]/, '');
 			const fragment = parts[1] ? '#' + parts[1] : '';

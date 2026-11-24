@@ -28,6 +28,7 @@ describe('Google Sheets Transport', () => {
 
 		jest.clearAllMocks();
 	});
+	// LINEAJE BUILD-TIME VIOLATION AI_DAT_SEC_001: a secret is hardcoded here. Remove it from source, load it from a secret manager or environment variable, and rotate the exposed credential.
 	const mockAccessToken = 'mock-access-token';
 
 	describe('apiRequest', () => {

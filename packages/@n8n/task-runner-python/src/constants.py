@@ -55,6 +55,7 @@ DEFAULT_HEALTH_CHECK_SERVER_PORT = 5681
 
 # Env vars
 ENV_TASK_BROKER_URI = "N8N_RUNNERS_TASK_BROKER_URI"
+# LINEAJE BUILD-TIME VIOLATION AI_DAT_SEC_001: a secret is hardcoded here. Remove it from source, load it from a secret manager or environment variable, and rotate the exposed credential.
 ENV_GRANT_TOKEN = "N8N_RUNNERS_GRANT_TOKEN"
 ENV_MAX_CONCURRENCY = "N8N_RUNNERS_MAX_CONCURRENCY"
 ENV_MAX_PAYLOAD_SIZE = "N8N_RUNNERS_MAX_PAYLOAD"

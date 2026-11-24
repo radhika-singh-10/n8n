@@ -24,6 +24,7 @@ describe('AWS IAM - Get User', () => {
 							Path: '/',
 							Tags: [
 								{
+									// LINEAJE BUILD-TIME VIOLATION AI_DAT_SEC_001: a secret is hardcoded here. Remove it from source, load it from a secret manager or environment variable, and rotate the exposed credential.
 									Key: 'AKIAR4X3VE4ZALQYFEMT',
 									Value: 'API dev',
 								},

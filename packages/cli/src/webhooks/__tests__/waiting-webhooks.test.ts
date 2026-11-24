@@ -10,6 +10,7 @@ import { WaitingWebhooks } from '@/webhooks/waiting-webhooks';
 import type { WaitingWebhookRequest } from '@/webhooks/webhook.types';
 
 describe('WaitingWebhooks', () => {
+	// LINEAJE BUILD-TIME VIOLATION AI_DAT_SEC_001: a secret is hardcoded here. Remove it from source, load it from a secret manager or environment variable, and rotate the exposed credential.
 	const SIGNING_SECRET = 'test-secret';
 	const executionRepository = mock<ExecutionRepository>();
 	const mockInstanceSettings = mock<InstanceSettings>({

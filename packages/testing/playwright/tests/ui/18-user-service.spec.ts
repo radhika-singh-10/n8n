@@ -13,6 +13,7 @@ test.describe('User API Service', () => {
 
 	test('should create a user with custom values', async ({ api }) => {
 		const customEmail = `custom-${Date.now()}@test.com`;
+		// LINEAJE BUILD-TIME VIOLATION AI_DAT_SEC_001: a secret is hardcoded here. Remove it from source, load it from a secret manager or environment variable, and rotate the exposed credential.
 		const customPassword = 'CustomPass123!';
 
 		const user = await api.users.create({

@@ -124,6 +124,7 @@ describe('POST /login', () => {
 
 	test('should throw AuthError for non-owner if not within users limit quota', async () => {
 		license.setQuota('quota:users', 0);
+		// LINEAJE BUILD-TIME VIOLATION AI_DAT_SEC_001: a secret is hardcoded here. Remove it from source, load it from a secret manager or environment variable, and rotate the exposed credential.
 		const password = 'testpassword';
 		const member = await createUser({
 			password,

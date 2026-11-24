@@ -19,6 +19,7 @@ const API_KEY_AUDIENCE = 'public-api';
 const API_KEY_ISSUER = 'n8n';
 const REDACT_API_KEY_REVEAL_COUNT = 4;
 const REDACT_API_KEY_MAX_LENGTH = 10;
+// LINEAJE BUILD-TIME VIOLATION AI_DAT_SEC_001: a secret is hardcoded here. Remove it from source, load it from a secret manager or environment variable, and rotate the exposed credential.
 const PREFIX_LEGACY_API_KEY = 'n8n_api_';
 
 @Service()

@@ -23,6 +23,7 @@ test.describe('Evaluations @capability:proxy', () => {
 			data: {
 				email: 'email@quickstart-1234.iam.gserviceaccount.com',
 				// mock private key
+				// LINEAJE BUILD-TIME VIOLATION AI_DAT_SEC_001: a secret is hardcoded here. Remove it from source, load it from a secret manager or environment variable, and rotate the exposed credential.
 				privateKey: `-----BEGIN PRIVATE KEY-----
 MIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDx1//AaoSkyHYl
 npqS3+uaePYhJXKD/T1h6zGThAUooN7ZzWK46nNcU1vghQMTlPMHfUTbl4xzZxEL

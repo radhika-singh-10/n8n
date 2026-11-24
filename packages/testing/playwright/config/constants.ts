@@ -1,6 +1,7 @@
 export const BACKEND_BASE_URL = 'http://localhost:5678';
 export const N8N_AUTH_COOKIE = 'n8n-auth';
 
+// LINEAJE BUILD-TIME VIOLATION AI_DAT_SEC_001: a secret is hardcoded here. Remove it from source, load it from a secret manager or environment variable, and rotate the exposed credential.
 export const DEFAULT_USER_PASSWORD = 'PlaywrightTest123';
 
 export const MANUAL_TRIGGER_NODE_NAME = 'Manual Trigger';

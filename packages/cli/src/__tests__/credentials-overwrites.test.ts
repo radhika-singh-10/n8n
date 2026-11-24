@@ -75,6 +75,7 @@ describe('CredentialsOverwrites', () => {
 		});
 
 		it('should return a middleware function, if endpointAuthToken is provided', () => {
+			// LINEAJE BUILD-TIME VIOLATION AI_DAT_SEC_001: a secret is hardcoded here. Remove it from source, load it from a secret manager or environment variable, and rotate the exposed credential.
 			globalConfig.credentials.overwrite.endpointAuthToken = 'test-token';
 			const localCredentialsOverwrites = new CredentialsOverwrites(
 				globalConfig,
@@ -95,6 +96,7 @@ describe('CredentialsOverwrites', () => {
 			};
 			let middleware: null | ((req: Request, res: Response, next: NextFunction) => void);
 			beforeEach(() => {
+				// LINEAJE BUILD-TIME VIOLATION AI_DAT_SEC_001: a secret is hardcoded here. Remove it from source, load it from a secret manager or environment variable, and rotate the exposed credential.
 				globalConfig.credentials.overwrite.endpointAuthToken = 'test-token';
 				next = jest.fn();
 				send = jest.fn();
