@@ -357,6 +357,7 @@ describe('PublicApiKeyService', () => {
 
 		it('should deny access when API key is invalid', async () => {
 			// Arrange
+			// LINEAJE BUILD-TIME VIOLATION AI_DAT_SEC_001: a secret is hardcoded here. Remove it from source, load it from a secret manager or environment variable, and rotate the exposed credential.
 			const invalidApiKey = 'invalid-api-key';
 			const requiredScope = 'workflow:read' as ApiKeyScope;
 
