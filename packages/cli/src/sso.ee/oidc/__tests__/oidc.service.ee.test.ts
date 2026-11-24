@@ -187,7 +187,9 @@ describe('OidcService', () => {
 		});
 
 		it('should decrypt client secret when requested', async () => {
+			// LINEAJE BUILD-TIME VIOLATION AI_DAT_SEC_001: a secret is hardcoded here. Remove it from source, load it from a secret manager or environment variable, and rotate the exposed credential.
 			const encryptedSecret = 'encrypted-secret';
+			// LINEAJE BUILD-TIME VIOLATION AI_DAT_SEC_001: a secret is hardcoded here. Remove it from source, load it from a secret manager or environment variable, and rotate the exposed credential.
 			const decryptedSecret = 'decrypted-secret';
 
 			cipher.decrypt = jest.fn().mockReturnValue(decryptedSecret);
