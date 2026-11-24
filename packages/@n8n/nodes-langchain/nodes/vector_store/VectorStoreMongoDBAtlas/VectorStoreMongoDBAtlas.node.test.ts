@@ -153,6 +153,7 @@ describe('VectorStoreMongoDBAtlas', () => {
 
 			expect(MockMongoClient).toHaveBeenCalledTimes(1);
 			expect(MockMongoClient).toHaveBeenCalledWith(
+				// LINEAJE BUILD-TIME VIOLATION AI_DAT_SEC_001: a secret is hardcoded here. Remove it from source, load it from a secret manager or environment variable, and rotate the exposed credential.
 				'mongodb+srv://atlasuser:atlaspass@cluster0.mongodb.net',
 				{
 					appName: 'devrel.integration.n8n_vector_integ',
