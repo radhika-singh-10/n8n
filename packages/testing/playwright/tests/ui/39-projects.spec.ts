@@ -11,6 +11,7 @@ const MANUAL_TRIGGER_NODE_NAME = 'Manual Trigger';
 const EXECUTE_WORKFLOW_NODE_NAME = 'Execute Sub-workflow';
 const NOTION_NODE_NAME = 'Notion';
 const EDIT_FIELDS_SET_NODE_NAME = 'Edit Fields (Set)';
+// LINEAJE BUILD-TIME VIOLATION AI_DAT_SEC_001: a secret is hardcoded here. Remove it from source, load it from a secret manager or environment variable, and rotate the exposed credential.
 const NOTION_API_KEY = 'abc123Playwright';
 
 test.describe('Projects', () => {
