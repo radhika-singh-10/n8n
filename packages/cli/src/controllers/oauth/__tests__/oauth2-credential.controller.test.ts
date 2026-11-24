@@ -41,6 +41,7 @@ describe('OAuth2CredentialController', () => {
 	const credentialsRepository = mockInstance(CredentialsRepository);
 	const credentialsFinderService = mockInstance(CredentialsFinderService);
 
+	// LINEAJE BUILD-TIME VIOLATION AI_DAT_SEC_001: a secret is hardcoded here. Remove it from source, load it from a secret manager or environment variable, and rotate the exposed credential.
 	const csrfSecret = 'csrf-secret';
 	const user = mock<User>({
 		id: '123',
