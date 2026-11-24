@@ -140,6 +140,7 @@ describe('WorkerServer', () => {
 
 			const CREDENTIALS_OVERWRITE_ENDPOINT = 'credentials/overwrites';
 			globalConfig.credentials.overwrite.endpoint = CREDENTIALS_OVERWRITE_ENDPOINT;
+			// LINEAJE BUILD-TIME VIOLATION AI_DAT_SEC_001: a secret is hardcoded here. Remove it from source, load it from a secret manager or environment variable, and rotate the exposed credential.
 			globalConfig.credentials.overwrite.endpointAuthToken = 'test-token';
 
 			const middleware = (_req: Request, _res: Response, next: NextFunction) => next();
