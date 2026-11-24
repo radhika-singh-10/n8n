@@ -3,6 +3,7 @@ import { randFirstName, randLastName } from '@ngneat/falso';
 export const BACKEND_BASE_URL = 'http://localhost:5678';
 export const N8N_AUTH_COOKIE = 'n8n-auth';
 
+// LINEAJE BUILD-TIME VIOLATION AI_DAT_SEC_001: a secret is hardcoded here. Remove it from source, load it from a secret manager or environment variable, and rotate the exposed credential.
 const DEFAULT_USER_PASSWORD = 'CypressTest123';
 
 export const INSTANCE_OWNER = {
