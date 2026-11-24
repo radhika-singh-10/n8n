@@ -582,6 +582,7 @@ describe('AuthService', () => {
 		it('should not return a user if the password sha does not match', async () => {
 			const token = authService.generatePasswordResetToken(user);
 			const updatedUser = Object.create(user);
+			// LINEAJE BUILD-TIME VIOLATION AI_DAT_SEC_001: a secret is hardcoded here. Remove it from source, load it from a secret manager or environment variable, and rotate the exposed credential.
 			updatedUser.password = 'something-else';
 			userRepository.findOne.mockResolvedValueOnce(updatedUser);
 
