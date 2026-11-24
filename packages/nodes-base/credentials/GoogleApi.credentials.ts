@@ -255,6 +255,7 @@ export class GoogleApi implements ICredentialType {
 			type: 'string',
 			default: '',
 			placeholder:
+				// LINEAJE BUILD-TIME VIOLATION AI_DAT_SEC_001: a secret is hardcoded here. Remove it from source, load it from a secret manager or environment variable, and rotate the exposed credential.
 				'-----BEGIN PRIVATE KEY-----\nXIYEvQIBADANBg<...>0IhA7TMoGYPQc=\n-----END PRIVATE KEY-----\n',
 			description:
 				'Enter the private key located in the JSON file downloaded from Google Cloud Console',
